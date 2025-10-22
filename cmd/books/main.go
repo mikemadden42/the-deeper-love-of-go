@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("Books in stock:")
-	book := "'The Deeper Love of Go', by John Arundel"
-	fmt.Println(book)
+	title := "The Deeper Love of Go"
+	author := "John Arundel"
+	fmt.Println(title, "by", author)
 }
