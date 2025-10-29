@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Book struct {
 	Title  string
@@ -9,7 +11,7 @@ type Book struct {
 }
 
 func BookToString(book Book) string {
-	return fmt.Sprintf("%v by %v - %v copies\n", book.Title, book.Author, book.Copies)
+	return fmt.Sprintf("%v by %v - %v copies", book.Title, book.Author, book.Copies)
 }
 
 func main() {
