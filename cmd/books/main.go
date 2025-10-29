@@ -8,9 +8,10 @@ type Book struct {
 	Copies int
 }
 
-func printBook(book Book) {
-	fmt.Printf("%v by %v - %v copies\n", book.Title, book.Author, book.Copies)
+func BookToString(book Book) string {
+	return fmt.Sprintf("%v by %v - %v copies\n", book.Title, book.Author, book.Copies)
 }
+
 func main() {
 	book := Book{
 		Title:  "The Deeper Love of Go",
@@ -19,5 +20,5 @@ func main() {
 	}
 
 	fmt.Println("Books in stock:")
-	printBook(book)
+	fmt.Print(BookToString(book))
 }
